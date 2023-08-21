@@ -1,0 +1,31 @@
+[project]
+name = "unstable-mensa"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "sobamchan", email = "oh.sore.sore.soutarou@gmail.com"},
+]
+dependencies = [
+    "torch>=2.0.1",
+    "diffusers>=0.20.0",
+    "transformers>=4.31.0",
+    "accelerate>=0.21.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ipython>=8.14.0",
+    "neovim>=0.3.1",
+    "black>=23.7.0",
+    "isort>=5.12.0",
+    "null>=0.6.1",
+]
